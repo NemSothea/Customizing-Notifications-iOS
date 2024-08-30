@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		16059B752C63278500BCF6CF /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D28ADA2C63248C00190AA0 /* NotificationService.swift */; };
 		16059B7A2C6351C500BCF6CF /* aps.cer in Resources */ = {isa = PBXBuildFile; fileRef = 16059B762C6351C500BCF6CF /* aps.cer */; };
-		16059B7B2C6351C500BCF6CF /* Json Case 1 with image.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16059B772C6351C500BCF6CF /* Json Case 1 with image.knuff */; };
 		16059B7C2C6351C500BCF6CF /* ReadMe.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 16059B782C6351C500BCF6CF /* ReadMe.geojson */; };
 		162A77812C65BCD500BE6CD4 /* Case 0 with long text.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 162A77802C65BCD500BE6CD4 /* Case 0 with long text.knuff */; };
 		162A77832C65BCDD00BE6CD4 /* Json Case 2 with video.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 162A77822C65BCDD00BE6CD4 /* Json Case 2 with video.knuff */; };
@@ -22,12 +21,13 @@
 		16B3C6BD2C61C76D00F02BB3 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B3C6BC2C61C76D00F02BB3 /* UserNotificationsUI.framework */; };
 		16B3C6C32C61C76D00F02BB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 16B3C6C22C61C76D00F02BB3 /* Base */; };
 		16B3C6C72C61C76D00F02BB3 /* Content.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 16B3C6B92C61C76D00F02BB3 /* Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		16C76F792C69B2EC00ED4418 /* XCDYouTubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 16C76F782C69B2EC00ED4418 /* XCDYouTubeKit */; };
-		16C76F7B2C69B30B00ED4418 /* XCDYouTubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 16C76F7A2C69B30B00ED4418 /* XCDYouTubeKit */; };
 		16C76F7E2C69B3F300ED4418 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C76F7D2C69B3F300ED4418 /* NotificationViewController.swift */; };
 		16C76F7F2C69B3F300ED4418 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C76F7D2C69B3F300ED4418 /* NotificationViewController.swift */; };
 		16D28AD92C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D28AD82C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift */; };
 		16D28ADB2C63248C00190AA0 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D28ADA2C63248C00190AA0 /* NotificationService.swift */; };
+		16EC00042C8184F600D3C6E2 /* Json Case 1 with image gif.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00032C8184F600D3C6E2 /* Json Case 1 with image gif.knuff */; };
+		16EC00062C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00052C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff */; };
+		16EC00082C81850500D3C6E2 /* Json Case 1 with image png.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00072C81850500D3C6E2 /* Json Case 1 with image png.knuff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 
 /* Begin PBXFileReference section */
 		16059B762C6351C500BCF6CF /* aps.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps.cer; sourceTree = "<group>"; };
-		16059B772C6351C500BCF6CF /* Json Case 1 with image.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 1 with image.knuff"; sourceTree = "<group>"; };
 		16059B782C6351C500BCF6CF /* ReadMe.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.geojson; sourceTree = "<group>"; };
 		162A77802C65BCD500BE6CD4 /* Case 0 with long text.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 0 with long text.knuff"; sourceTree = "<group>"; };
 		162A77822C65BCDD00BE6CD4 /* Json Case 2 with video.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 2 with video.knuff"; sourceTree = "<group>"; };
@@ -85,6 +84,9 @@
 		16D28AD82C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webCaffeeNotificationDelegate.swift; sourceTree = "<group>"; };
 		16D28ADA2C63248C00190AA0 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		16E694122C608795009F6195 /* Customizing the Appearance of Notifications in Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Customizing the Appearance of Notifications in Swift.entitlements"; sourceTree = "<group>"; };
+		16EC00032C8184F600D3C6E2 /* Json Case 1 with image gif.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 1 with image gif.knuff"; sourceTree = "<group>"; };
+		16EC00052C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 1 with image jpg.knuff"; sourceTree = "<group>"; };
+		16EC00072C81850500D3C6E2 /* Json Case 1 with image png.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 1 with image png.knuff"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16C76F7B2C69B30B00ED4418 /* XCDYouTubeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +110,6 @@
 			files = (
 				16B3C6BD2C61C76D00F02BB3 /* UserNotificationsUI.framework in Frameworks */,
 				16B3C6BB2C61C76D00F02BB3 /* UserNotifications.framework in Frameworks */,
-				16C76F792C69B2EC00ED4418 /* XCDYouTubeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,10 +119,12 @@
 		16059B792C6351C500BCF6CF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				16EC00072C81850500D3C6E2 /* Json Case 1 with image png.knuff */,
+				16EC00052C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff */,
+				16EC00032C8184F600D3C6E2 /* Json Case 1 with image gif.knuff */,
 				162A77822C65BCDD00BE6CD4 /* Json Case 2 with video.knuff */,
 				162A77802C65BCD500BE6CD4 /* Case 0 with long text.knuff */,
 				16059B762C6351C500BCF6CF /* aps.cer */,
-				16059B772C6351C500BCF6CF /* Json Case 1 with image.knuff */,
 				16059B782C6351C500BCF6CF /* ReadMe.geojson */,
 			);
 			path = Helper;
@@ -220,7 +222,6 @@
 			);
 			name = "Customizing the Appearance of Notifications in Swift";
 			packageProductDependencies = (
-				16C76F7A2C69B30B00ED4418 /* XCDYouTubeKit */,
 			);
 			productName = "Customizing the Appearance of Notifications in Swift";
 			productReference = 166030332C60687D000A2638 /* Customizing the Appearance of Notifications in Swift.app */;
@@ -257,7 +258,6 @@
 			);
 			name = Content;
 			packageProductDependencies = (
-				16C76F782C69B2EC00ED4418 /* XCDYouTubeKit */,
 			);
 			productName = Content;
 			productReference = 16B3C6B92C61C76D00F02BB3 /* Content.appex */;
@@ -296,7 +296,6 @@
 			);
 			mainGroup = 1660302A2C60687D000A2638;
 			packageReferences = (
-				16C76F772C69B2C500ED4418 /* XCRemoteSwiftPackageReference "XCDYouTubeKit" */,
 			);
 			productRefGroup = 166030342C60687D000A2638 /* Products */;
 			projectDirPath = "";
@@ -316,10 +315,12 @@
 			files = (
 				16059B7A2C6351C500BCF6CF /* aps.cer in Resources */,
 				162A77832C65BCDD00BE6CD4 /* Json Case 2 with video.knuff in Resources */,
+				16EC00082C81850500D3C6E2 /* Json Case 1 with image png.knuff in Resources */,
 				1660303E2C60687E000A2638 /* Preview Assets.xcassets in Resources */,
-				16059B7B2C6351C500BCF6CF /* Json Case 1 with image.knuff in Resources */,
 				1660303B2C60687E000A2638 /* Assets.xcassets in Resources */,
 				162A77812C65BCD500BE6CD4 /* Case 0 with long text.knuff in Resources */,
+				16EC00042C8184F600D3C6E2 /* Json Case 1 with image gif.knuff in Resources */,
+				16EC00062C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff in Resources */,
 				16059B7C2C6351C500BCF6CF /* ReadMe.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,7 +659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Content/Content-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -686,7 +687,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Content/Content-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -732,30 +733,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		16C76F772C69B2C500ED4418 /* XCRemoteSwiftPackageReference "XCDYouTubeKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/0xced/XCDYouTubeKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.15.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		16C76F782C69B2EC00ED4418 /* XCDYouTubeKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 16C76F772C69B2C500ED4418 /* XCRemoteSwiftPackageReference "XCDYouTubeKit" */;
-			productName = XCDYouTubeKit;
-		};
-		16C76F7A2C69B30B00ED4418 /* XCDYouTubeKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 16C76F772C69B2C500ED4418 /* XCRemoteSwiftPackageReference "XCDYouTubeKit" */;
-			productName = XCDYouTubeKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1660302B2C60687D000A2638 /* Project object */;
 }
