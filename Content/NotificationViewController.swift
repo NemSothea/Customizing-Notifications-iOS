@@ -9,6 +9,7 @@ import UIKit
 import UserNotifications
 import UserNotificationsUI
 import AVKit
+import MapKit
 //import WebKit
 //import SafariServices
 
@@ -18,9 +19,16 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     @IBOutlet weak var imageView        : UIImageView!
     @IBOutlet weak var buttonAction     : UIButton!
     
+    @IBOutlet weak var mapView          : MKMapView!
     @IBOutlet weak var titleLabel       : UILabel!
     @IBOutlet weak var descriptionLabel : UILabel!
     @IBOutlet weak var viewDetailLabel  : UILabel!
+    
+   
+    @IBOutlet weak var imageContainer   : UIView!
+    @IBOutlet weak var stackView        : UIStackView!
+    
+    @IBOutlet weak var mapPointIcon     : UIImageView!
     // MARK: - Properties
 //    var webView             : WKWebView?
     var player              : AVPlayer?
@@ -89,6 +97,9 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
                 self.playerView.isHidden = true
                 self.imageView(for: urlString)
             }
+        }else {
+        
+            self.receiveMapData(with: content)
         }
     }
     //MARK: Case 1 with image
@@ -146,6 +157,26 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         } else {
             self.buttonAction.setImage(UIImage(systemName: "play.fill"), for: .normal)
         }
+    }
+    func receiveMapData(with map : UNNotificationContent) {
+        
+        let userInfo = map.userInfo
+        
+        guard let latitude = userInfo["latitude"] as? CLLocationDistance,
+              let longitude = userInfo["longitude"] as? CLLocationDistance,
+              let radius = userInfo["radius"] as? CLLocationDistance else {
+          return
+        }
+        let location = CLLocation(latitude: latitude, longitude: longitude)
+        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: radius, longitudinalMeters: radius)
+        
+        self.hideView()
+        self.mapView.setRegion(region, animated: false)
+
+    }
+    func hideView() {
+        self.imageContainer.isHidden = true
+        self.stackView     .isHidden = true
     }
    // MARK: - Helper Functions
 //    func openVideoWithWebkit(with url: URL) {

@@ -18,23 +18,20 @@
     "aps":{
         "alert": {
             "title": "WeCafé App",
-            "body": "WeCafé ពិតជាមានសេចក្តីសោមនស្សរីករាយយ៉ាងខ្លាំង ក្នុងការអោយដំណើរការកម្មវីធីរបស់ខ្លួន នៅក្នុង KOSIGN 🥳🤘🏻😍"
+            "body": "🤑 ចំណេញ ពេល បញ្ចូលលុយតាម　ＰＰＣ　Ｂａｎｋ　បានរៀង រាល់ ថ្ងៃ។ 💸 បញ្ចូលលុយតាម PPC Bank កាន់តែ ងាយស្រួល រហ័ស និង ចំណេញ ច្រើន តោះ កុម្ម៉ង់ Coffee ឥឡូវ នេះ 👉🏻"
         },
         "badge":1
     }
 }
 
-
-
-//Case with with image :
-
+//Case with with image jpg :
 {
   "aps": {
     "content-available":1,
      "mutable-content":"1",
     "alert": {
-      "title": "WeCafé App បញ្ចុះតម្លៃរហូតដល់ 50% ~",
-      "body": "🤑 ចំណេញ ពេល បញ្ចូលលុយតាម PPC BANK បានរៀង រាល់ ថ្ងៃ។ 💸 បញ្ចូលលុយតាម PPC Bank កាន់តែ ងាយស្រួល រហ័ស និង ចំណេញ ច្រើន តោះ កុម្ម៉ង់ Coffee ឥឡូវ នេះ ដើម្បី ទទួលបាន ការ បញ្ចុះតម្លៃរហូតដល់ 50%  👉🏻"
+      "title": "WeCafé new items Arrived",
+      "body": "Never run out of essentials like hand soap and paper towels again. Stock up with Uber Eats."
     },
     "badge": 1,
     "sound": "default"
@@ -42,23 +39,80 @@
   "attachment-url": "https://static.wixstatic.com/media/1d5343_e1662d9703c74392a3e83c0b0a2f24b9~mv2.jpg"
 }
 
-//Case with with video :
+
+
+//Case with with image png :
 
 {
-   "aps" : {
-      "alert" : {
-         "title" : "A new app. Introducing WABOOKS",
-         "body" : "Facing Problems with Paper or Excel Accounting? WABOOKS make it simple & Smart."
-      },
-      "sound": "bingbong.aiff",
-      "badge": 3,
-   },
-   "videoId" : "QeXuMOZJ8To",
-   "description": "released : Sep 28, 2010",
-   "Simulator Target Bundle": "com.alfianlosari.apnspushsimulate"
+  "aps": {
+    "content-available":1,
+     "mutable-content":"1",
+    "alert": {
+      "title": "WeCafé ពិធីបុណ្យភ្ផុំបិណ្ឌ បញ្ចុះតម្លៃ  ៥០% 🥳🤝",
+      "body": "ដើម្បីអបអរសាទ័រ បុណ្យភ្ជុំបិណ្ឌ ប្រពៃណីជាតិខ្មែរ ប្រូម៉ូសិនពិសេស ពីក្រុមហ៊ុនខ្មែរ២៤ ប្រញ៉ាប់ឡើង ប្រញ៉ាប់ឡើង >>ផុតកំណត់ថ្ងៃទី"
+    },
+    "badge": 1,
+    "sound": "default"
+  },
+  "attachment-url": "https://png.pngtree.com/png-vector/20240820/ourlarge/pngtree-khmer-pchum-ben-day-2024-vector-png-image_13526103.png"
+}
+
+//Case 1 with with image gif :
+// Need text from WeCafé
+{
+  "aps": {
+    "content-available":1,
+     "mutable-content":"1",
+    "alert": {
+      "title": "WeCafé App Save 50% off!",
+      "body": "Never run out of essentials like hand soap and paper towels again. Stock up with Uber Eats."
+    },
+    "badge": 1,
+    "sound": "default"
+  },
+  "attachment-url": "https://media1.tenor.com/m/twFtmlVLUDQAAAAd/cat.gif"
 }
 
 
+//Case 2 with with video :
+
+{
+   "aps" : {
+         "content-available":1,
+     "mutable-content":1,
+      "alert" : {
+         "title" : "Our Planet | One Planet 🌎🌎",
+         "body" : "Experience our planet's natural beauty and examine how climate change."
+      },
+       "category" : "CustomSamplePush",
+      "sound": "default",
+      "badge": 1,
+   },
+     "attachment-url" : "https://file-examples.com/storage/fed4cf5e5466cf5da9e984e/2017/04/file_example_MP4_480_1_5MG.mp4",
+   "description": "28,658,750 views  Apr 17, 2020",
+   "Simulator Target Bundle": "kh.com.sothea.customnotifications"
+}
+
+//Case 3 with with map :
+
+{
+   "aps" : {
+         "content-available":1,
+     "mutable-content":1,
+      "alert" : {
+         "title" : "New location of WeCafé Store 🤩🙌🏻",
+         "body" : "Ready to start visiting? Here are some important reminders: Refer to the map below to see your visting zones and starting points."
+      },
+       "category" : "CustomSamplePush",
+      "sound": "default",
+      "badge": 1,
+   },
+   "attachment-url": "https://media1.tenor.com/m/twFtmlVLUDQAAAAd/cat.gif",
+   "latitude" : 11.563560095704341,
+   "longitude" : 104.88209171466077,
+   "radius" : 500,
+   "Simulator Target Bundle": "kh.com.sothea.customnotifications"
+}
 
 
 
