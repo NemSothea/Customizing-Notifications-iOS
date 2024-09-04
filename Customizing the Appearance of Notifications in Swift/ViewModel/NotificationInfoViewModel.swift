@@ -118,7 +118,7 @@ class NotificationInfoViewModel: ObservableObject {
                              "content-available":1,
                              "mutable-content":1,
                             "alert" : {
-                               "title" : "WeCafé Store 🤩🙌🏻",
+                               "title" : "WeCafé Store 🤩🙌🏻🗺️",
                                "body" : "Ready to start visiting? Here are some important reminders: Refer to the map below to see your visting zones and starting points."
                             },
                              "category" : "CustomSamplePush",
