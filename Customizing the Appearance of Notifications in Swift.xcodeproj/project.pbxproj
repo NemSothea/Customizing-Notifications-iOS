@@ -17,6 +17,7 @@
 		162EA5FB2C88428F003085F4 /* CodePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EA5FA2C88428F003085F4 /* CodePreview.swift */; };
 		162EA5FD2C884BDB003085F4 /* NotificationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EA5FC2C884BDB003085F4 /* NotificationInfoViewModel.swift */; };
 		162EA5FF2C885183003085F4 /* Case 1 Long Text Notification.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 162EA5FE2C885183003085F4 /* Case 1 Long Text Notification.knuff */; };
+		162EA6042C8863F6003085F4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 162EA6032C8863F6003085F4 /* README.md */; };
 		166030372C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166030362C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift */; };
 		166030392C60687D000A2638 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166030382C60687D000A2638 /* ContentView.swift */; };
 		1660303B2C60687E000A2638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1660303A2C60687E000A2638 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		162EA5FA2C88428F003085F4 /* CodePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreview.swift; sourceTree = "<group>"; };
 		162EA5FC2C884BDB003085F4 /* NotificationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfoViewModel.swift; sourceTree = "<group>"; };
 		162EA5FE2C885183003085F4 /* Case 1 Long Text Notification.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 1 Long Text Notification.knuff"; sourceTree = "<group>"; };
+		162EA6032C8863F6003085F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		166030332C60687D000A2638 /* Customizing the Appearance of Notifications in Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Customizing the Appearance of Notifications in Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		166030362C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift; sourceTree = "<group>"; };
 		166030382C60687D000A2638 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		1660302A2C60687D000A2638 = {
 			isa = PBXGroup;
 			children = (
+				162EA6032C8863F6003085F4 /* README.md */,
 				16059B792C6351C500BCF6CF /* Helper */,
 				166030352C60687D000A2638 /* Customizing the Appearance of Notifications in Swift */,
 				16B3C6AA2C61C6B800F02BB3 /* Service */,
@@ -364,6 +367,7 @@
 				16B9063B2C86C763000CD084 /* Case 6 Notification with Map Data.knuff in Resources */,
 				16EC00042C8184F600D3C6E2 /* Case 4 Notification with a GIF Image.knuff in Resources */,
 				16EC00062C8184FE00D3C6E2 /* Case 2 Notification with a JPG Image.knuff in Resources */,
+				162EA6042C8863F6003085F4 /* README.md in Resources */,
 				16059B7C2C6351C500BCF6CF /* ReadMe.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
