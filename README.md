@@ -1,4 +1,5 @@
-
+# - Demo Customizing the Appearance of Notifications in Swift :
+![Alt text](https://github.com/NemSothea/Customizing-Notifications-iOS/blob/main/Customizing-Notifications-iOS.gif)
 
 # Rerefence link :
 1. https://www.youtube.com/watch?v=oNoRw69ro2k&ab_channel=NativeNotify
