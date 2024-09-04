@@ -24,11 +24,11 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     @IBOutlet weak var descriptionLabel : UILabel!
     @IBOutlet weak var viewDetailLabel  : UILabel!
     
-   
-    @IBOutlet weak var imageContainer   : UIView!
+
     @IBOutlet weak var stackView        : UIStackView!
     
     @IBOutlet weak var mapPointIcon     : UIImageView!
+    @IBOutlet weak var locationTitleLabel: UILabel!
     // MARK: - Properties
 //    var webView             : WKWebView?
     var player              : AVPlayer?
@@ -84,21 +84,21 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         // Case 1 with image
         if let urlString = content.userInfo["attachment-url"] as? String {
             
-            if urlString.contains(".mp4") {
-                // Handle video case
+            self.hideMap()
+            
+            if urlString.contains(".mp4") { // Handle video case
                 self.imageView.isHidden = true
                 self.playerView.isHidden = false
                 self.playVideo(for: urlString)
                 //set description
                 self.getValueVideoDescription(with: content)
-            } else {
-                // Handle image case
+            } else {// Handle image case
                 self.imageView.isHidden = false
                 self.playerView.isHidden = true
                 self.imageView(for: urlString)
             }
         }else {
-        
+            // Handle map case
             self.receiveMapData(with: content)
         }
     }
@@ -165,18 +165,30 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         guard let latitude = userInfo["latitude"] as? CLLocationDistance,
               let longitude = userInfo["longitude"] as? CLLocationDistance,
               let radius = userInfo["radius"] as? CLLocationDistance else {
-          return
+            return
         }
         let location = CLLocation(latitude: latitude, longitude: longitude)
         let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: radius, longitudinalMeters: radius)
+        let aps     = map.userInfo["aps"] as? NSDictionary
+        let alert   = aps?["alert"] as? NSDictionary
+        
+        if let title = alert?["title"] as? String {
+            self.locationTitleLabel.text = "New location : \(title)"
+        }
         
         self.hideView()
         self.mapView.setRegion(region, animated: false)
-
+        self.view.layoutIfNeeded()
     }
     func hideView() {
-        self.imageContainer.isHidden = true
+        self.playerView.isHidden = true
         self.stackView     .isHidden = true
+    }
+    func hideMap() {
+        self.mapView.isHidden = true
+        self.mapPointIcon.isHidden = true
+        self.locationTitleLabel.isHidden = true
+        
     }
    // MARK: - Helper Functions
 //    func openVideoWithWebkit(with url: URL) {
@@ -209,7 +221,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         self.playerLayer?.frame = playerView.bounds
         self.playerLayer?.videoGravity = .resizeAspectFill
         self.playerView.layer.addSublayer(playerLayer!)
-   
+  
         // Start video playback
 //           self.player?.play()
         self.playerView.bringSubviewToFront(buttonAction)

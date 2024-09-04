@@ -10,8 +10,13 @@
 		16059B752C63278500BCF6CF /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D28ADA2C63248C00190AA0 /* NotificationService.swift */; };
 		16059B7A2C6351C500BCF6CF /* aps.cer in Resources */ = {isa = PBXBuildFile; fileRef = 16059B762C6351C500BCF6CF /* aps.cer */; };
 		16059B7C2C6351C500BCF6CF /* ReadMe.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 16059B782C6351C500BCF6CF /* ReadMe.geojson */; };
-		162A77812C65BCD500BE6CD4 /* Case 1 with long text.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 162A77802C65BCD500BE6CD4 /* Case 1 with long text.knuff */; };
-		162A77832C65BCDD00BE6CD4 /* Json Case 2 with video.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 162A77822C65BCDD00BE6CD4 /* Json Case 2 with video.knuff */; };
+		162A77832C65BCDD00BE6CD4 /* Case 5 Notification with Video.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 162A77822C65BCDD00BE6CD4 /* Case 5 Notification with Video.knuff */; };
+		162EA5F52C880458003085F4 /* NotificationInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EA5F42C880458003085F4 /* NotificationInfoModel.swift */; };
+		162EA5F72C88051C003085F4 /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EA5F62C88051C003085F4 /* NotificationListView.swift */; };
+		162EA5F92C883269003085F4 /* NotificationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EA5F82C883269003085F4 /* NotificationDetail.swift */; };
+		162EA5FB2C88428F003085F4 /* CodePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EA5FA2C88428F003085F4 /* CodePreview.swift */; };
+		162EA5FD2C884BDB003085F4 /* NotificationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162EA5FC2C884BDB003085F4 /* NotificationInfoViewModel.swift */; };
+		162EA5FF2C885183003085F4 /* Case 1 Long Text Notification.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 162EA5FE2C885183003085F4 /* Case 1 Long Text Notification.knuff */; };
 		166030372C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166030362C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift */; };
 		166030392C60687D000A2638 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166030382C60687D000A2638 /* ContentView.swift */; };
 		1660303B2C60687E000A2638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1660303A2C60687E000A2638 /* Assets.xcassets */; };
@@ -21,14 +26,14 @@
 		16B3C6BD2C61C76D00F02BB3 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B3C6BC2C61C76D00F02BB3 /* UserNotificationsUI.framework */; };
 		16B3C6C32C61C76D00F02BB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 16B3C6C22C61C76D00F02BB3 /* Base */; };
 		16B3C6C72C61C76D00F02BB3 /* Content.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 16B3C6B92C61C76D00F02BB3 /* Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		16B9063B2C86C763000CD084 /* Case 3 with map.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16B9063A2C86C763000CD084 /* Case 3 with map.knuff */; };
+		16B9063B2C86C763000CD084 /* Case 6 Notification with Map Data.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16B9063A2C86C763000CD084 /* Case 6 Notification with Map Data.knuff */; };
 		16C76F7E2C69B3F300ED4418 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C76F7D2C69B3F300ED4418 /* NotificationViewController.swift */; };
 		16C76F7F2C69B3F300ED4418 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C76F7D2C69B3F300ED4418 /* NotificationViewController.swift */; };
 		16D28AD92C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D28AD82C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift */; };
 		16D28ADB2C63248C00190AA0 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D28ADA2C63248C00190AA0 /* NotificationService.swift */; };
-		16EC00042C8184F600D3C6E2 /* Json Case 1 with image gif.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00032C8184F600D3C6E2 /* Json Case 1 with image gif.knuff */; };
-		16EC00062C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00052C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff */; };
-		16EC00082C81850500D3C6E2 /* Json Case 1 with image png.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00072C81850500D3C6E2 /* Json Case 1 with image png.knuff */; };
+		16EC00042C8184F600D3C6E2 /* Case 4 Notification with a GIF Image.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00032C8184F600D3C6E2 /* Case 4 Notification with a GIF Image.knuff */; };
+		16EC00062C8184FE00D3C6E2 /* Case 2 Notification with a JPG Image.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00052C8184FE00D3C6E2 /* Case 2 Notification with a JPG Image.knuff */; };
+		16EC00082C81850500D3C6E2 /* Case 3 Notification with a PNG Image.knuff in Resources */ = {isa = PBXBuildFile; fileRef = 16EC00072C81850500D3C6E2 /* Case 3 Notification with a PNG Image.knuff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +71,13 @@
 /* Begin PBXFileReference section */
 		16059B762C6351C500BCF6CF /* aps.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps.cer; sourceTree = "<group>"; };
 		16059B782C6351C500BCF6CF /* ReadMe.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.geojson; sourceTree = "<group>"; };
-		162A77802C65BCD500BE6CD4 /* Case 1 with long text.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 1 with long text.knuff"; sourceTree = "<group>"; };
-		162A77822C65BCDD00BE6CD4 /* Json Case 2 with video.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 2 with video.knuff"; sourceTree = "<group>"; };
+		162A77822C65BCDD00BE6CD4 /* Case 5 Notification with Video.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 5 Notification with Video.knuff"; sourceTree = "<group>"; };
+		162EA5F42C880458003085F4 /* NotificationInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfoModel.swift; sourceTree = "<group>"; };
+		162EA5F62C88051C003085F4 /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
+		162EA5F82C883269003085F4 /* NotificationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetail.swift; sourceTree = "<group>"; };
+		162EA5FA2C88428F003085F4 /* CodePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreview.swift; sourceTree = "<group>"; };
+		162EA5FC2C884BDB003085F4 /* NotificationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfoViewModel.swift; sourceTree = "<group>"; };
+		162EA5FE2C885183003085F4 /* Case 1 Long Text Notification.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 1 Long Text Notification.knuff"; sourceTree = "<group>"; };
 		166030332C60687D000A2638 /* Customizing the Appearance of Notifications in Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Customizing the Appearance of Notifications in Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		166030362C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift; sourceTree = "<group>"; };
 		166030382C60687D000A2638 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,14 +91,14 @@
 		16B3C6BC2C61C76D00F02BB3 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		16B3C6C22C61C76D00F02BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		16B3C6C42C61C76D00F02BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16B9063A2C86C763000CD084 /* Case 3 with map.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 3 with map.knuff"; sourceTree = "<group>"; };
+		16B9063A2C86C763000CD084 /* Case 6 Notification with Map Data.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 6 Notification with Map Data.knuff"; sourceTree = "<group>"; };
 		16C76F7D2C69B3F300ED4418 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		16D28AD82C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webCaffeeNotificationDelegate.swift; sourceTree = "<group>"; };
 		16D28ADA2C63248C00190AA0 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		16E694122C608795009F6195 /* Customizing the Appearance of Notifications in Swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Customizing the Appearance of Notifications in Swift.entitlements"; sourceTree = "<group>"; };
-		16EC00032C8184F600D3C6E2 /* Json Case 1 with image gif.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 1 with image gif.knuff"; sourceTree = "<group>"; };
-		16EC00052C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 1 with image jpg.knuff"; sourceTree = "<group>"; };
-		16EC00072C81850500D3C6E2 /* Json Case 1 with image png.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Json Case 1 with image png.knuff"; sourceTree = "<group>"; };
+		16EC00032C8184F600D3C6E2 /* Case 4 Notification with a GIF Image.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 4 Notification with a GIF Image.knuff"; sourceTree = "<group>"; };
+		16EC00052C8184FE00D3C6E2 /* Case 2 Notification with a JPG Image.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 2 Notification with a JPG Image.knuff"; sourceTree = "<group>"; };
+		16EC00072C81850500D3C6E2 /* Case 3 Notification with a PNG Image.knuff */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Case 3 Notification with a PNG Image.knuff"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,16 +131,42 @@
 		16059B792C6351C500BCF6CF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				16B9063A2C86C763000CD084 /* Case 3 with map.knuff */,
-				16EC00072C81850500D3C6E2 /* Json Case 1 with image png.knuff */,
-				16EC00052C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff */,
-				16EC00032C8184F600D3C6E2 /* Json Case 1 with image gif.knuff */,
-				162A77822C65BCDD00BE6CD4 /* Json Case 2 with video.knuff */,
-				162A77802C65BCD500BE6CD4 /* Case 1 with long text.knuff */,
+				162EA5FE2C885183003085F4 /* Case 1 Long Text Notification.knuff */,
+				16EC00052C8184FE00D3C6E2 /* Case 2 Notification with a JPG Image.knuff */,
+				16EC00072C81850500D3C6E2 /* Case 3 Notification with a PNG Image.knuff */,
+				16EC00032C8184F600D3C6E2 /* Case 4 Notification with a GIF Image.knuff */,
+				162A77822C65BCDD00BE6CD4 /* Case 5 Notification with Video.knuff */,
+				16B9063A2C86C763000CD084 /* Case 6 Notification with Map Data.knuff */,
 				16059B762C6351C500BCF6CF /* aps.cer */,
 				16059B782C6351C500BCF6CF /* ReadMe.geojson */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		162EA6002C8851FE003085F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				162EA5F42C880458003085F4 /* NotificationInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		162EA6012C885221003085F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				162EA5FC2C884BDB003085F4 /* NotificationInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		162EA6022C885233003085F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				162EA5F62C88051C003085F4 /* NotificationListView.swift */,
+				162EA5F82C883269003085F4 /* NotificationDetail.swift */,
+				162EA5FA2C88428F003085F4 /* CodePreview.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1660302A2C60687D000A2638 = {
@@ -161,10 +197,13 @@
 				16E694122C608795009F6195 /* Customizing the Appearance of Notifications in Swift.entitlements */,
 				166030492C606BFC000A2638 /* Customizing-the-Appearance-of-Notifications-in-Swift-Info.plist */,
 				166030362C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift */,
-				166030382C60687D000A2638 /* ContentView.swift */,
 				1660303A2C60687E000A2638 /* Assets.xcassets */,
 				1660303C2C60687E000A2638 /* Preview Content */,
 				16D28AD82C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift */,
+				166030382C60687D000A2638 /* ContentView.swift */,
+				162EA6002C8851FE003085F4 /* Model */,
+				162EA6012C885221003085F4 /* ViewModel */,
+				162EA6022C885233003085F4 /* View */,
 			);
 			path = "Customizing the Appearance of Notifications in Swift";
 			sourceTree = "<group>";
@@ -316,15 +355,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162EA5FF2C885183003085F4 /* Case 1 Long Text Notification.knuff in Resources */,
 				16059B7A2C6351C500BCF6CF /* aps.cer in Resources */,
-				162A77832C65BCDD00BE6CD4 /* Json Case 2 with video.knuff in Resources */,
-				16EC00082C81850500D3C6E2 /* Json Case 1 with image png.knuff in Resources */,
+				162A77832C65BCDD00BE6CD4 /* Case 5 Notification with Video.knuff in Resources */,
+				16EC00082C81850500D3C6E2 /* Case 3 Notification with a PNG Image.knuff in Resources */,
 				1660303E2C60687E000A2638 /* Preview Assets.xcassets in Resources */,
 				1660303B2C60687E000A2638 /* Assets.xcassets in Resources */,
-				162A77812C65BCD500BE6CD4 /* Case 1 with long text.knuff in Resources */,
-				16B9063B2C86C763000CD084 /* Case 3 with map.knuff in Resources */,
-				16EC00042C8184F600D3C6E2 /* Json Case 1 with image gif.knuff in Resources */,
-				16EC00062C8184FE00D3C6E2 /* Json Case 1 with image jpg.knuff in Resources */,
+				16B9063B2C86C763000CD084 /* Case 6 Notification with Map Data.knuff in Resources */,
+				16EC00042C8184F600D3C6E2 /* Case 4 Notification with a GIF Image.knuff in Resources */,
+				16EC00062C8184FE00D3C6E2 /* Case 2 Notification with a JPG Image.knuff in Resources */,
 				16059B7C2C6351C500BCF6CF /* ReadMe.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,8 +392,13 @@
 			files = (
 				16C76F7E2C69B3F300ED4418 /* NotificationViewController.swift in Sources */,
 				166030392C60687D000A2638 /* ContentView.swift in Sources */,
+				162EA5F72C88051C003085F4 /* NotificationListView.swift in Sources */,
+				162EA5FD2C884BDB003085F4 /* NotificationInfoViewModel.swift in Sources */,
 				166030372C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift in Sources */,
 				16059B752C63278500BCF6CF /* NotificationService.swift in Sources */,
+				162EA5F92C883269003085F4 /* NotificationDetail.swift in Sources */,
+				162EA5F52C880458003085F4 /* NotificationInfoModel.swift in Sources */,
+				162EA5FB2C88428F003085F4 /* CodePreview.swift in Sources */,
 				16D28AD92C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +585,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +619,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
