@@ -17,7 +17,6 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     
     // MARK: - @IBOutlet
     @IBOutlet weak var playerView       : UIView!
-    @IBOutlet weak var imageView        : UIImageView!
     @IBOutlet weak var buttonAction     : UIButton!
     
     @IBOutlet weak var mapView          : MKMapView!
@@ -86,35 +85,16 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
             self.hideMap()
             
             if urlString.contains(".mp4") { // Handle video case
-                self.imageView.isHidden = true
                 self.playerView.isHidden = false
                 self.playVideo(for: urlString)
                 //set description
                 self.getValueVideoDescription(with: content)
             } else {// Handle image case
-                self.imageView.isHidden = false
                 self.playerView.isHidden = true
-                self.imageView(for: urlString)
             }
         }else {
             // Case 2 handle map case
             self.receiveMapData(with: content)
-        }
-    }
-    //MARK: Case 1 with image
-    private func imageView(for urlImageString : String) {
-        if let url = URL(string: urlImageString) {
-            URLSession.downloadImage(atURL: url) { [weak self] (data, error) in
-                if let _ = error {
-                    return
-                }
-                guard let data = data else {
-                    return
-                }
-                DispatchQueue.main.async {
-                    self?.imageView.image = UIImage(data: data)
-                }
-            }
         }
     }
     
@@ -234,15 +214,5 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         self.player?.pause()
         self.player?.seek(to: .zero)
         self.updatePlayPauseButton()
-    }
-}
-
-extension URLSession {
-    
-    class func downloadImage(atURL url: URL, withCompletionHandler completionHandler: @escaping (Data?, NSError?) -> Void) {
-        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, error) in
-            completionHandler(data, nil)
-        }
-        dataTask.resume()
     }
 }
