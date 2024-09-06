@@ -42,7 +42,7 @@ class NotificationInfoViewModel: ObservableObject {
                               "title": "WeCafé new items Arrived",
                               "body": "The new items in WeCafé for KOSIGNer is almost here. Have you drink it already."
                             },
-                            "badge": 1,
+                            "badge": 2,
                             "sound": "default"
                           },
                           "attachment-url": "https://static.wixstatic.com/media/1d5343_e1662d9703c74392a3e83c0b0a2f24b9~mv2.jpg"
@@ -61,7 +61,7 @@ class NotificationInfoViewModel: ObservableObject {
                               "title": "WeCafé ពិធីបុណ្យភ្ផុំបិណ្ឌ បញ្ចុះតម្លៃ  ៥០% 🥳🤝",
                               "body": "ដើម្បីអបអរសាទ័រ បុណ្យភ្ជុំបិណ្ឌ ប្រពៃណីជាតិខ្មែរ ប្រូម៉ូសិនពិសេស ពីក្រុមហ៊ុនខ្មែរ២៤ ប្រញ៉ាប់ឡើង ប្រញ៉ាប់ឡើង >>ផុតកំណត់ថ្ងៃនេះ"
                             },
-                            "badge": 1,
+                            "badge": 3,
                             "sound": "default"
                           },
                           "attachment-url": "https://png.pngtree.com/png-vector/20240820/ourlarge/pngtree-khmer-pchum-ben-day-2024-vector-png-image_13526103.png"
@@ -80,7 +80,7 @@ class NotificationInfoViewModel: ObservableObject {
                              "title": "WeCafé Store 🔔⚠️🔔",
                              "body": "សួស្តីចា​ ខាងហាងកាហ្វេ បានបាត់ ទឹកត្រចៀកកាំ ។​​ បើសិន ជាមានអ្នក មិនទាន់ បាន​កម្មង់ទេ​ សូម​ចូលទៅ កម្មង់ផង ណា។​ សូមអរគុណ"
                            },
-                           "badge": 1,
+                           "badge": 4,
                            "sound": "default"
                          },
                          "attachment-url": "https://media1.tenor.com/m/twFtmlVLUDQAAAAd/cat.gif"
@@ -101,7 +101,7 @@ class NotificationInfoViewModel: ObservableObject {
                               },
                                "category" : "CustomSamplePush",
                               "sound": "default",
-                              "badge": 1,
+                              "badge": 5,
                            },
                              "attachment-url" : "https://media.istockphoto.com/id/1459585081/video/digital-abstract-network-grid-over-the-earth-artificial-intelligence-neural-network-growing.mp4?s=mp4-640x640-is&k=20&c=-vKDwYFF-onrZVZJR9hdA1V89xkq1pqG6qbKL0s9quo=",
                            "description": "28,658,750 views  Apr 17, 2020",
@@ -123,7 +123,7 @@ class NotificationInfoViewModel: ObservableObject {
                             },
                              "category" : "CustomSamplePush",
                             "sound": "default",
-                            "badge": 1,
+                            "badge": 6,
                          },
                          "latitude" : 11.563560095704341,
                          "longitude" : 104.88209171466077,

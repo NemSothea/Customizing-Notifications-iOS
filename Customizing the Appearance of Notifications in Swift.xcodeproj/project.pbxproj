@@ -23,6 +23,8 @@
 		166030392C60687D000A2638 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166030382C60687D000A2638 /* ContentView.swift */; };
 		1660303B2C60687E000A2638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1660303A2C60687E000A2638 /* Assets.xcassets */; };
 		1660303E2C60687E000A2638 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1660303D2C60687E000A2638 /* Preview Assets.xcassets */; };
+		169154782C893EB20028E88B /* Customizing the Appearance of Notifications in Swift.key in Resources */ = {isa = PBXBuildFile; fileRef = 169154772C893EB20028E88B /* Customizing the Appearance of Notifications in Swift.key */; };
+		1691547A2C894DC50028E88B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169154792C894DC50028E88B /* AppDelegate.swift */; };
 		16B3C6B02C61C6B800F02BB3 /* Service.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 16B3C6A92C61C6B800F02BB3 /* Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		16B3C6BB2C61C76D00F02BB3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B3C6BA2C61C76D00F02BB3 /* UserNotifications.framework */; };
 		16B3C6BD2C61C76D00F02BB3 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B3C6BC2C61C76D00F02BB3 /* UserNotificationsUI.framework */; };
@@ -88,6 +90,8 @@
 		1660303A2C60687E000A2638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1660303D2C60687E000A2638 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		166030492C606BFC000A2638 /* Customizing-the-Appearance-of-Notifications-in-Swift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Customizing-the-Appearance-of-Notifications-in-Swift-Info.plist"; sourceTree = SOURCE_ROOT; };
+		169154772C893EB20028E88B /* Customizing the Appearance of Notifications in Swift.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Customizing the Appearance of Notifications in Swift.key"; sourceTree = "<group>"; };
+		169154792C894DC50028E88B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16B3C6A92C61C6B800F02BB3 /* Service.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Service.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B3C6AD2C61C6B800F02BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B3C6B92C61C76D00F02BB3 /* Content.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Content.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +180,7 @@
 		1660302A2C60687D000A2638 = {
 			isa = PBXGroup;
 			children = (
+				169154772C893EB20028E88B /* Customizing the Appearance of Notifications in Swift.key */,
 				162EA6052C886844003085F4 /* Customizing-Notifications-iOS.gif */,
 				162EA6032C8863F6003085F4 /* README.md */,
 				16059B792C6351C500BCF6CF /* Helper */,
@@ -203,6 +208,7 @@
 				16E694122C608795009F6195 /* Customizing the Appearance of Notifications in Swift.entitlements */,
 				166030492C606BFC000A2638 /* Customizing-the-Appearance-of-Notifications-in-Swift-Info.plist */,
 				166030362C60687D000A2638 /* Customizing_the_Appearance_of_Notifications_in_SwiftApp.swift */,
+				169154792C894DC50028E88B /* AppDelegate.swift */,
 				1660303A2C60687E000A2638 /* Assets.xcassets */,
 				1660303C2C60687E000A2638 /* Preview Content */,
 				16D28AD82C631CAB00190AA0 /* webCaffeeNotificationDelegate.swift */,
@@ -364,6 +370,7 @@
 				162EA5FF2C885183003085F4 /* Case 1 Long Text Notification.knuff in Resources */,
 				16059B7A2C6351C500BCF6CF /* aps.cer in Resources */,
 				162A77832C65BCDD00BE6CD4 /* Case 5 Notification with Video.knuff in Resources */,
+				169154782C893EB20028E88B /* Customizing the Appearance of Notifications in Swift.key in Resources */,
 				16EC00082C81850500D3C6E2 /* Case 3 Notification with a PNG Image.knuff in Resources */,
 				1660303E2C60687E000A2638 /* Preview Assets.xcassets in Resources */,
 				1660303B2C60687E000A2638 /* Assets.xcassets in Resources */,
@@ -398,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1691547A2C894DC50028E88B /* AppDelegate.swift in Sources */,
 				16C76F7E2C69B3F300ED4418 /* NotificationViewController.swift in Sources */,
 				166030392C60687D000A2638 /* ContentView.swift in Sources */,
 				162EA5F72C88051C003085F4 /* NotificationListView.swift in Sources */,

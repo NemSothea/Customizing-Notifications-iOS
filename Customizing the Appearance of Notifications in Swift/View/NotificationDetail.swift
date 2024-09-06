@@ -43,7 +43,7 @@ struct NotificationDetail: View {
 
 #Preview {
     NotificationDetail(userInfo: NotificationInfoModel(
-        name: "Case 1 long text ",
+        name: "Case 1: Long Text Notification ",
           description: """
             {
                 "aps":{

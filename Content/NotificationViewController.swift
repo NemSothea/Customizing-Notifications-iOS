@@ -14,6 +14,7 @@ import MapKit
 //import SafariServices
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
+    
     // MARK: - @IBOutlet
     @IBOutlet weak var playerView       : UIView!
     @IBOutlet weak var imageView        : UIImageView!
@@ -23,8 +24,6 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     @IBOutlet weak var titleLabel       : UILabel!
     @IBOutlet weak var descriptionLabel : UILabel!
     @IBOutlet weak var viewDetailLabel  : UILabel!
-    
-
     @IBOutlet weak var stackView        : UIStackView!
     
     @IBOutlet weak var mapPointIcon     : UIImageView!
@@ -81,9 +80,9 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         
         let content = notification.request.content
         
-        // Case 1 with image
+        // Case 1 with image & video
         if let urlString = content.userInfo["attachment-url"] as? String {
-            
+            // handle hide map case if data is not image or .mp4
             self.hideMap()
             
             if urlString.contains(".mp4") { // Handle video case
@@ -98,7 +97,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
                 self.imageView(for: urlString)
             }
         }else {
-            // Handle map case
+            // Case 2 handle map case
             self.receiveMapData(with: content)
         }
     }
@@ -181,12 +180,12 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         self.view.layoutIfNeeded()
     }
     func hideView() {
-        self.playerView.isHidden = true
+        self.playerView.isHidden     = true
         self.stackView     .isHidden = true
     }
     func hideMap() {
-        self.mapView.isHidden = true
-        self.mapPointIcon.isHidden = true
+        self.mapView.isHidden            = true
+        self.mapPointIcon.isHidden       = true
         self.locationTitleLabel.isHidden = true
         
     }

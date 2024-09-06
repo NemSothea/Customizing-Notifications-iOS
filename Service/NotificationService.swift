@@ -22,7 +22,7 @@ class NotificationService: UNNotificationServiceExtension {
         guard let bestAttemptContent = bestAttemptContent, let mediaURL = bestAttemptContent.userInfo["attachment-url"] as? String, let attachmentURL = URL(string: mediaURL) else {
             return
         }
-        // 2. Download the image and pass it to attachments if not nil
+        // 2. Download the image, mp4 and pass it to attachments if not nil
         self.downloadImageFrom(url: attachmentURL) { (attachment) in
             if attachment != nil {
                 bestAttemptContent.attachments = [attachment!]
